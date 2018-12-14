@@ -169,7 +169,7 @@
   right: 99.5%;
 }
 
-#selected {
+#itemSelected {
   position: absolute;
   top: 35%;
   left: 48%;
@@ -179,4 +179,12 @@
   font-size: 20pt;
   padding: 5px;
   background-color: white;
+}
+
+#bubble {
+  position: absolute;
+  border-radius: 50%;
+  background-color: green;
+  z-index: 10;
+  pointer-events: none;
 }
