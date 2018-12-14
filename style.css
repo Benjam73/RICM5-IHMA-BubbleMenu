@@ -6,7 +6,7 @@
 
 .menu ul {
   position: relative;
-  z-index: 597;
+  z-index: 5;
 }
 
 .menu ul li {
@@ -15,7 +15,7 @@
 
 .menu ul li:hover {
   position: relative;
-  z-index: 599;
+  z-index: 7;
   cursor: default;
 }
 
@@ -24,7 +24,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: 598;
+  z-index: 6;
   width: 100%;
 }
 
