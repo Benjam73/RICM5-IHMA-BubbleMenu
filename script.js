@@ -17,7 +17,7 @@ $(function () {
                 currentElem.off('click');
                 $('#bubble').show();
 
-                var bubbleItems = currentElem.parent().find('.bubbleitem');
+                var bubbleItems = currentElem.parent().parent().find('.bubbleitem');
                 var closestBubbleItem = $(bubbleItems[0]);
                 bubbleItems.each(function (index) {
                     if (Math.abs(e.pageY - $(this).offset().top) < e.pageY - closestBubbleItem.offset().top) {
