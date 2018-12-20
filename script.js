@@ -3,7 +3,7 @@ $(function () {
     $(document).mousemove(e => {
         var currentElem = $(e.target);
 
-        if (currentElem.hasClass("menuitem")) {
+        if (currentElem.hasClass("menuitem") || currentElem.parent().hasClass("menuitem")) {
 
             if (isLeftFromElem(e.pageX, currentElem)) {
 
@@ -33,7 +33,6 @@ $(function () {
                     left: e.pageX - bubbleSize / 3,
                     top: e.pageY - bubbleSize / 3
                 });
-
 
                 currentElem.click(() => {
                     $("#itemSelected").text(closestBubbleItem.text());
